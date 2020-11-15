@@ -1,0 +1,48 @@
+.ADF{
+    color: firebrick;
+    fill: firebrick;
+}
+
+.YST{
+    color: green;
+    fill: green;
+}
+
+.AHG{
+    color: rgb(167, 158, 77);
+    fill: rgb(167, 158, 77);
+}
+
+.AHM{
+    color: pink;
+    fill: pink;
+}
+
+.AHW{
+    color: lightgreen;
+    fill: lightgreen;
+}
+
+.AHX{
+    color: orange;
+    fill: orange;
+}
+
+
+.ALE{
+    color:steelblue;
+    fill: steelblue;
+}
+
+.ALJ{
+    color: orangered;
+    fill: orangered;
+}
+
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 60px;					
+    height: 28px;					
+    padding: 2px;
+}
