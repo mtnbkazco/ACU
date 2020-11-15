@@ -1,4 +1,4 @@
-d3.csv("/data/ACU_DATA_FINAL.csv").then(data =>
+d3.csv("/Data/ACU_DATA_FINAL_SLIM.csv").then(data =>
     {    
     let bubble = new Bubble(data);
     bubble.drawBubble();
