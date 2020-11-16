@@ -182,10 +182,3 @@ class DataPull {
 // Month: "April"
 // MonthDate: "2018-04-01"
 // SalesTotal: "30033047.65"
-
-//d3.select("#road").selectAll("option")
-// .data(d3.map(data, function(d){return d.roadname;}).keys())
-// .enter()
-// .append("option")
-// .text(function(d){return d;})
-// .attr("value",function(d){return d;});
