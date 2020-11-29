@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Visualization - Homework 6 - The State of the State of the State </title>
     <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://d3js.org/d3-scale.v3.min.js"></script>
     <script src="https://d3js.org/d3-array.v2.min.js"></script>
     <script src="https://d3js.org/d3-force.v2.min.js"></script>
     <script src="https://d3js.org/d3-queue.v3.min.js"></script>
@@ -15,9 +16,26 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="container">
         <!-- Monthly Alcohol Sales Section -->
+        <div id="header-wrap">
+            <header>
+                <h1>ACU Visualization</h1>
+            </header>
+            <h3>Alcohol Sales by Month</h3>
+        </div>
+        <div id="chart">
+        </div>
+        <p>This visualization shows the pattern of alcohol sales in Utah across three years by month.
+            <br>As show there is a continuous growth in alcohol sales each year. Utah liquor sales have been
+            <br>rising 6%-7% annually for the last several years.<br>
+            <br><b>COVID-19 Noteable Months:</b>
+            <br><u>March 2020</u>, Salt Lake County Order to close all Restaurants, Bars, and Taverns
+            <br><u>April 2020</u>, Gov. Herbert extends the Stay Safe Stay Home Directive through the end of April
+            <br><u>October 2020</u>, Face coverings are mandatory for Salt Lake County in effect until January 5, 2021
+            <br><b>NOTE:</b> Data for Jan / Feb / March 2018, Nov / Dec 2020 was NOT available.</p><br>
 
         <!-- Categories Section -->
         <div id="categories">
@@ -40,6 +58,8 @@
         <!-- Profit by Volume Section -->
     </div>
     <script src="js/categories.js"></script>
+    <script src="js/radialChart.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>
