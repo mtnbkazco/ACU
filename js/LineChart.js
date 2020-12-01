@@ -135,7 +135,7 @@ class Line_Chart{
                     .duration(1)
                     .style("opacity", 1);
                     tooltip1.html((d["Total Sales"]))
-                    .style("left", (d3.event.pageX - 15) + "px")
+                    .style("left", (d3.event.pageX - 40) + "px")
                     .style("top", (d3.event.pageY - 40) + "px");
                 })
             .on("mouseout", function(d, event) {
