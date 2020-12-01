@@ -174,15 +174,15 @@ class Bubble{
                 .attr("stroke", "black")
                 .attr("class", d => d["Class Code"].substring(0,1))
                 .style("opacity", .8)
-                .on("mouseover", function(event,d) {
+                .on("mouseover", function(d, event) {
                     tooltip.transition()
                         .duration(1)
                         .style("opacity", 1);
                         tooltip.html((d["Product Name"]))
-                        .style("left", (event.pageX - 60) + "px")
-                        .style("top", (event.pageY - 80) + "px");
+                        .style("left", (d3.event.pageX - 60) + "px")
+                        .style("top", (d3.event.pageY - 80) + "px");
                     })
-                .on("mouseout", function(event, d) {
+                .on("mouseout", function(d, event) {
                     tooltip
                         .transition()
                         .duration(1)
