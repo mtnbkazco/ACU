@@ -144,7 +144,7 @@ class Bubble{
                 .call(d3.axisLeft(filtered_scaleTotalSales))
                 .append("text")
                 .attr("fill", "black")
-                .attr("transform","translate(-10, 200)")
+                .attr("transform", "rotate(-90), translate(-180, -50)")
                 .text("Total Sales");
         
 
