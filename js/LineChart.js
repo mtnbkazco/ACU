@@ -94,14 +94,16 @@ class Line_Chart{
             .attr("transform", "rotate(-65)");
         svg2.append("text")
             .attr("fill", "black")
-            .attr("transform","translate(200, 470)")
+            .attr("transform","translate(185, 470)")
+            .style("font-size","11px")
             .text("Date");
 
         svg2.append("g")
             .call(d3.axisLeft(filtered_scaleTotalSales1));
         svg2.append("text")
             .attr("fill", "black")
-            .attr("transform","translate(-75, 210)")
+            .attr("transform", "rotate(-90), translate(-240, -45)")
+            .style("font-size","11px")
             .text("Total Sales");
 
         svg2.append("path")
