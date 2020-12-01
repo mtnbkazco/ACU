@@ -25,9 +25,9 @@ div.tooltip {
 div.tooltip1 {
     position: absolute;			
     text-align: center;			
-    width: 45px;					
-    height: 12px;					
-    padding: 2px;
+    width: 80px;					
+    height: 20px;					
+    padding: 3px;
 }
 
 
