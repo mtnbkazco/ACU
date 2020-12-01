@@ -55,7 +55,7 @@ class Line_Chart{
         console.log(data_filtered1)
 
 
-        let tooltip = d3.select("#my_dataviz")
+        let tooltip1 = d3.select("#my_dataviz2")
             .append("div")
             .style("opacity", 0)
             .attr("class", "tooltip1")
@@ -128,16 +128,16 @@ class Line_Chart{
             .attr("stroke", "black")
             .attr("class", d => d["Class Code"].substring(0,1))
             .style("opacity", 1)
-            .on("mouseover", function(event,d) {
-                tooltip.transition()
+            .on("mouseover", function(d, event) {
+                tooltip1.transition()
                     .duration(1)
                     .style("opacity", 1);
-                    tooltip.html((d["Total Sales"]))
-                    .style("left", (event.pageX - 20) + "px")
-                    .style("top", (event.pageY - 20) + "px");
+                    tooltip1.html((d["Total Sales"]))
+                    .style("left", (d3.event.pageX - 15) + "px")
+                    .style("top", (d3.event.pageY - 40) + "px");
                 })
-            .on("mouseout", function(event, d) {
-                tooltip
+            .on("mouseout", function(d, event) {
+                tooltip1
                     .transition()
                     .duration(1)
                     .style("opacity", 0.0000001);
