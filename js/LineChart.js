@@ -42,6 +42,39 @@ class Line_Chart{
         //console.log(data)
         //svg.selectAll("circle").remove();
         svg2.selectAll("*").remove();
+  
+        var jsonCircles = [
+            { "x_axis": 430, "y_axis": 0, "radius": 8, "class" : "A" },
+            { "x_axis": 430, "y_axis": 30, "radius": 8, "class" : "R"},
+            { "x_axis": 430, "y_axis": 60, "radius": 8, "class" : "L"}];
+
+        var circles = svg2.selectAll("circle")
+            .data(jsonCircles)
+            .enter()
+            .append("circle");
+
+        circles
+            .attr("cx", function (d) { return d.x_axis; })
+            .attr("cy", function (d) { return d.y_axis; })
+            .attr("r", function (d) { return d.radius; })
+            .attr("class", function(d) { return d.class; });
+
+        svg2.append("text")
+            .attr("fill", "black")
+            .attr("transform", "translate(445, 4)")
+            .style("font-size","10px")
+            .text("Spirits");
+        svg2.append("text")
+            .attr("fill", "black")
+            .attr("transform", "translate(445, 34)")
+            .style("font-size","10px")
+            .text("Beer");
+        svg2.append("text")
+            .attr("fill", "black")
+            .attr("transform", "translate(445, 64)")
+            .style("font-size","10px")
+            .text("Wine");
+
 
         let data_filtered_not_sorted = this.data.filter(function(d){ 
             if((d["Product Name"]) == selectedProduct){ 
