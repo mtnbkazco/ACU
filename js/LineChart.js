@@ -1,7 +1,7 @@
 let svg2 = d3.select("#my_dataviz2")
     .append("svg")
-    .attr("width", 1800)
-    .attr("height", 1200)
+    .attr("width", 1000)
+    .attr("height", 600)
     .append("g")
     .attr("transform", "translate(" + 80 + "," + 10 + ")");
 
