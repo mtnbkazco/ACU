@@ -1,13 +1,16 @@
 .wine {
     fill: #7c0238;
+    cursor: pointer;
 }
 
 .beer {
     fill: #cc9a04;
+    cursor: pointer;
 }
 
 .spirits {
     fill: #979696;
+    cursor: pointer;
 }
 
 
