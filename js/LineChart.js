@@ -137,7 +137,7 @@ class Line_Chart{
             .attr("fill", "black")
             .attr("transform", "rotate(-90), translate(-240, -45)")
             .style("font-size","11px")
-            .text("Total Sales");
+            .text("Total Sales in Dollars");
 
         svg2.append("path")
             .datum(data_filtered1)
