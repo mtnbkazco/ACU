@@ -1,0 +1,101 @@
+.wine {
+    fill: #7c0238;
+}
+
+.beer {
+    fill: #cc9a04;
+}
+
+.spirits {
+    fill: #979696;
+}
+
+
+
+
+
+div.tooltip {
+    position: absolute;			
+    text-align: center;			
+    width: 120px;					
+    height: 45px;					
+    padding: 2px;
+}
+
+div.tooltip1 {
+    position: absolute;			
+    text-align: center;			
+    width: 80px;					
+    height: 20px;					
+    padding: 3px;
+}
+
+
+.A{
+    color: #979696;
+    fill: #979696;
+}
+
+.C{
+    color: #979696;
+    fill: #979696;
+}
+
+.E{
+    color: #7c0238;
+    fill: #7c0238;;
+}
+.G{
+    color: #7c0238;;
+    fill: #7c0238;;
+}
+.K{
+    color: #7c0238;;
+    fill: #7c0238;;
+}
+.L{
+    color: #7c0238;;
+    fill: #7c0238;;
+}
+.M{
+    color: #7c0238;;
+    fill: #7c0238;;
+}
+.P{
+    color: #7c0238;;
+    fill: #7c0238;;
+}
+
+
+.R{
+    color: #cc9a04;
+    fill: #cc9a04;
+}
+.T{
+    color: #cc9a04;
+    fill: #cc9a04;
+}
+
+.I{
+    color: #7c0238;;
+    fill: #7c0238;;
+}
+
+.E{
+    color: #7c0238;;
+    fill: #7c0238;;
+}
+
+
+.radtext{
+    text-anchor: middle;
+    font-family: sans-serif;
+    opacity: 1;
+    font-size: small;
+}
+
+.axisLabel{
+    font-family: sans-serif;
+    opacity: 0.8;
+    font-size: x-small;
+}

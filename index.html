@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ACU Visualization</title>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://d3js.org/d3-scale.v3.min.js"></script>
+    <script src="https://d3js.org/d3-array.v2.min.js"></script>
+    <script src="https://d3js.org/d3-force.v2.min.js"></script>
+    <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"-->
+    <!--        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Monthly Alcohol Sales Section -->
+        <div id="header-wrap">
+            <header>
+                <h1>Utah Alcohol Sales Visualization</h1>
+            </header>
+            <h3>Alcohol Sales by Month</h3>
+        </div>
+        <button id="redraw" type="button" class="btn btn-secondary" style="display: block;" onClick="history.go(0)">Draw Again</button>
+        <div id="chart">
+        </div>
+        <p>This visualization shows the pattern of alcohol sales in Utah across three years by month.
+            <br>As show there is a continuous growth in alcohol sales each year. Utah liquor sales have been
+            <br>rising 6%-7% annually for the last several years.<br>
+            <br><b>COVID-19 Notable Months:</b>
+            <br><u>March 2020</u>, Salt Lake County Order to close all Restaurants, Bars, and Taverns
+            <br><u>April 2020</u>, Gov. Herbert extends the Stay Safe Stay Home Directive through the end of April
+            <br><u>October 2020</u>, Face coverings are mandatory for Salt Lake County in effect until January 5, 2021
+            <br><b>NOTE:</b> Data for Jan / Feb / March 2018, Nov / Dec 2020 was NOT available.
+        </p><br>
+        
+        <!-- Categories Section -->
+        <div id="categories">
+            <div class="row">
+                <div class="col-12">
+                    <h3>Alcohol Sales by Category</h3>
+                    <button id="categoryResetButton" type="button" class="btn btn-secondary">Back to Main Categories</button>
+                    <svg id="categories-plot"></svg>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>This is the section explaining the categories visualization...</p>
+                    <p>This is the section explaining the categories visualization...</p>
+                    <p>This is the section explaining the categories visualization...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profit by Volume Section -->
+        <div id="header__">
+            <h3>Alcohol Sales by Volume</h3>
+        </div>
+        <select id="selectDate" class=filters ></select>
+        <select id="selectBottleSize" class=filters ></select>
+        <div id="my_dataviz"></div>
+         <p>This visualization shows which alcohol is the most expensive for a given bottle size relative to a standardized volume of 9L.</p>
+        
+        <div id="header__">
+            <h3>Alcohol Sales by Specific Product</h3>
+        </div>
+        <select id="selectName" class=filters1 ></select>
+        <div id="my_dataviz2"></div>
+        <p>This visualization shows the sales totals per month for specific products
+        <br>Class codes for November 2019 were not availble</p>
+    </div>
+    <script src="js/categories.js"></script>
+    <script src="js/radialChart.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bubblechart3.js"></script>
+    <script src="js/LineChart.js"></script>
+</body>
+
+</html>
