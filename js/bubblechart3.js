@@ -79,7 +79,7 @@ class Bubble{
             .selectAll('myOptions')
             .data(bottlesizes_set_sorted)
             .enter().append("option")
-            .text(function(d) { return d; })
+            .text(function(d) { return d + " ml"; })
             .attr("value", function (d, i) {
                 return d;
             });
