@@ -10,7 +10,7 @@ class CategoriesChart {
         this.margin = {
             bottom: 20,
             top: 20,
-            left: 40,
+            left: 60,
             right: 300
         }
 
@@ -34,6 +34,11 @@ class CategoriesChart {
 
         svg.attr('height', this.vizHeight)
             .attr('width', this.vizWidth);
+
+        // Draw Y axis label
+        svg.append("text")
+            .text("Sales in Dollars")
+            .attr("transform", "translate(20,350)rotate(270)");
 
         if (category === null) {
             this.drawMainCategories();
@@ -127,27 +132,26 @@ class CategoriesChart {
         d3.select("#categoryResetButton")
             .style("display", "block");
 
-        console.log("category", category);
-        console.log(this.spiritsData);
-
         let datasource = null;
+        let maxHeight = 0;
         switch(category) {
             case "wine":
                 datasource = this.wineData;
+                maxHeight = 18000000;
                 break;
             case "beer":
                 datasource = this.beerData;
+                maxHeight = 3700000;
                 break;
             default:
                 datasource = this.spiritsData;
+                maxHeight = 26000000;
                 break;
         }
 
         let subgroups = datasource.columns.slice(1);
 
         // var groups = d3.map(datasource, function(d){return(d.group)}).keys()
-
-        let maxHeight = 8000;
 
         // Make the scales
         let heightScale = d3.scaleLinear()
@@ -214,8 +218,8 @@ class CategoriesChart {
             .data(keys)
             .enter()
             .append("rect")
-            .attr("x", 700)
-            .attr("y", function(d,i){ return 300 + i*(legendSize+5)}) // 100 is where the first dot appears. 25 is the distance between dots
+            .attr("x", 650)
+            .attr("y", function(d,i){ return 225 + i*(legendSize+5)}) // 100 is where the first dot appears. 25 is the distance between dots
             .attr("width", legendSize)
             .attr("height", legendSize)
             .style("fill", function(d){ return colorScale(d)});
@@ -225,8 +229,8 @@ class CategoriesChart {
             .data(keys)
             .enter()
             .append("text")
-            .attr("x", 700 + legendSize*1.2)
-            .attr("y", function(d,i){ return 300 + i*(legendSize+5) + (legendSize/2)}) // 100 is where the first dot appears. 25 is the distance between dots
+            .attr("x", 650 + legendSize*1.2)
+            .attr("y", function(d,i){ return 225 + i*(legendSize+5) + (legendSize/2)}) // 100 is where the first dot appears. 25 is the distance between dots
             .style("fill", function(d){ return colorScale(d)})
             .text(function(d){ return d})
             .attr("text-anchor", "left")

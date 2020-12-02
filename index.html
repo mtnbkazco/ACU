@@ -24,6 +24,15 @@
             <header>
                 <h1>Utah Alcohol Sales Visualization</h1>
             </header>
+            <p> Utah has a unique population when it comes to the consumption of alcohol, this is largely because of the Utah-based faith, The Church of Jesus Christ Latter-day Saints.  In 2010, the population of Utah was 2.7 million.  According to the estimates released by the Census Bureau in January 2020, Utah’s population has increased 16% over the last decade.  According to the census, net migration had a bigger impact on population growth than high fertility and reproduction rates.  Simply put, more people not from Utah are moving to Utah.  In fact, people moving into the state outpaced new births in 2019 (Richards 2020).  This unremitting demographic shift has led to a major change in Utah.  As of 2018 48.91% of the Salt Lake County population (less than half) was Latter-day Saint.  That is the lowest since the 1930s (Canham 2018).  This means that slowly overtime the change in demographics has also caused a change in lifestyle.  Although we are unable to look back ninety years at alcohol consumption, we can look back over the last couple years and see trends in alcohol consumption in Salt Lake County. 
+                <br>In addition to these gradual trends of alcohol consumption due to the evolving demographic profile of Utah, the possibility of more abrupt shifts in alcohol consumption is looming with the emergence of COVID-19.
+                <br> 
+                <br>With regard to COVID-19, it is clear that this virus has had a profound impact on our daily lives. In the last year we, as a society, face new challenges concerning mental health and dealing with anxiety and stress.  In April it was reported that the pandemic had given way to an increase in domestic violence in countries abroad (Taub 2020).  That same month it was also reported that there was an increase in alcohol sales abroad as well (Troianovski 2020).  As COVID-19 continues to play a role in structuring our everyday lives, it’s important to gauge the impact it is having closer to home, and within our communities.  This led to our second motivation with this project.  We want to visualize how alcohol trends have shifted in Utah during COVID-19 in Utah.
+                <br> 
+                <br>It should also be noted that although bars and restaurants have taken a hit in terms of alcohol sales due to the fact that they are currently unable to serve as many patrons as in the past, this is causing customers to purchase from liquor stores.  Because Utah’s liquor stores are state owned, we have a unique opportunity to evaluate the liquor sales within the state.
+                <br> 
+                <br>The data provided by the Utah Department of Alcohol Beverage Control (abc.utah.gov) is incredibly granular and also gives us a unique view into the sales trends of alcohol in Utah.
+            </p>
             <h3>Alcohol Sales by Month</h3>
         </div>
         <button id="redraw" type="button" class="btn btn-secondary" style="display: block;" onClick="history.go(0)">Draw Again</button>
@@ -52,9 +61,12 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <p>This is the section explaining the categories visualization...</p>
-                    <p>This is the section explaining the categories visualization...</p>
-                    <p>This is the section explaining the categories visualization...</p>
+                    <br>
+                    <p><strong>Click on category in a bar to see the sub-categories.</strong></p>
+                    <p>Overall, we see that Utahns purchase mostly wine and spirits at the state liquor stores. This is not a surprise now that grocery stores can stock 5% beers. The overall proportion of wine to spirits stays fairly constant, though overall sales vary considerably depending on the month.</p>
+                    <p>In the spirits category (click the silver part of one of the bars to see it), we see that whiskey is the top selling spirit, followed by vodka. Tequila and rum follow vodka and are each similar in sales to the total liqueurs category. It's also notable that the months of August and September are nearly identical in total spirits sales and the breakdown of those sales.</p>
+                    <p>Inside the beer category (click the yellow part of one of the bars to see it), we see that beer sales from Utah liquor stores are dominated by the ale category. Ale sales consistently make up well over half of all beer sales.</p>
+                    <p>Within wine (click the red part of the bar to see it), we find red wine to consistently be the top selling category. Interestingly, we also see that quite a bit of the month-to-month variation in total wine sales is driven by the fluctuations in the red wine sales. White wine sales, while typically smaller than red wine sales, are more steady.</p>
                 </div>
             </div>
         </div>
@@ -63,18 +75,21 @@
         <div id="header__">
             <h3>Alcohol Sales by Volume</h3>
         </div>
+        <p>Please select a bottle size and date from the dropdown below.. </p>
         <select id="selectDate" class=filters ></select>
         <select id="selectBottleSize" class=filters ></select>
         <div id="my_dataviz"></div>
-         <p>This visualization shows which alcohol is the most expensive for a given bottle size relative to a standardized volume of 9L.</p>
+        <p>This visualization shows which alcohol is the most expensive for a given bottle size relative to a standardized volume of 9L. Cost per volume will fluctuate for different size bottles, so comparing between different sizes will not lead to meaningful conclusions. Based on this visualization you can see which brands make the most for the least amount of product. 
         
         <div id="header__">
             <h3>Alcohol Sales by Specific Product</h3>
         </div>
+        <p>Please select a product from the dropdown below.. </p>
         <select id="selectName" class=filters1 ></select>
         <div id="my_dataviz2"></div>
-        <p>This visualization shows the sales totals per month for specific products
-        <br>Class codes for November 2019 were not availble</p>
+        <p>This visualization shows the sales totals per month for specific products. Most product's sales figures fluctuate significantly, even if they are a top selling product. Some products were only sold during specific months, and will not have sales data for the full time frame. Some of the same products were sold in various different sizes, and some of those sizes sold significantly better than others.
+        <br> 
+        <br>Class codes for November 2019 were not availble so that circle will always appear black.</p>
     </div>
     <script src="js/categories.js"></script>
     <script src="js/radialChart.js"></script>
