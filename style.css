@@ -85,3 +85,17 @@ div.tooltip1 {
     color: #7c0238;;
     fill: #7c0238;;
 }
+
+
+.radtext{
+    text-anchor: middle;
+    font-family: sans-serif;
+    opacity: 1;
+    font-size: small;
+}
+
+.axisLabel{
+    font-family: sans-serif;
+    opacity: 0.8;
+    font-size: x-small;
+}
