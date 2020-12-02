@@ -41,7 +41,7 @@ class DataPull {
         }
 
         x.domain(d3.extent(data, function(d) { return d.MonthDate }));
-        y.domain(d3.extent(data, function(d) { return d.Year2018 }));
+        y.domain(d3.extent(data, function(d) { return d.Year2018 + 10000000}));
 
         let xAx = g.append("g");
         let yAx = g.append("g")
