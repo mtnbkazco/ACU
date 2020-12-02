@@ -179,7 +179,7 @@ class Bubble{
                 .append("text")
                 .attr("fill", "black")
                 .attr("transform", "rotate(-90), translate(-180, -50)")
-                .text("Total Sales");
+                .text("Total Sales in Dollars");
         
 
 
