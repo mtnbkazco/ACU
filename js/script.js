@@ -17,7 +17,7 @@ Promise.all(promises).then(function(values) {
 });
 
 
-d3.csv("/data/ACU_DATA_FINAL_SLIM.csv").then(data =>
+d3.csv('data/ACU_DATA_FINAL_SLIM.csv').then(data =>
     {    
     let bubble = new Bubble(data);
     bubble.drawBubble()
