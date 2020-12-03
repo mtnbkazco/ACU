@@ -5,4 +5,4 @@ Alcohol Consumption in Utah CS 5660 / CS 6630 - Visualization Project
 
 [Link to site](https://mtnbkazco.github.io/ACU/)
 
-[Screen Cast](https://youtu.be/b9Ul9LRhoVM)
+[Project Screen Cast](https://youtu.be/b9Ul9LRhoVM)
